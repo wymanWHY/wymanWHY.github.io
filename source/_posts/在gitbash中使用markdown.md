@@ -1,7 +1,11 @@
 ---
 title: 在gitbash中使用markdown
 date: 2018-02-07 18:48:30
+categories: git
 tags:
+	- gitbash
+	- markdownpad
+	- notepad
 ---
 
 习惯了通过命令行的方式调用带图形界面的文本编辑器，比如gedit、kwrite

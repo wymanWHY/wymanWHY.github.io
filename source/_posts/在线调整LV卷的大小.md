@@ -1,7 +1,11 @@
 ---
 title: 在线调整LV卷的大小
 date: 2018-02-11 17:05:48
+categories: Linux
 tags:
+	- LVM
+	- Linux
+	- resize2fs
 ---
 
 /tmp目录不知道是哪个挨千刀的设置的，容量太小，时不时就满；
