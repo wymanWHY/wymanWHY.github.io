@@ -352,11 +352,19 @@
       </div>
     {% endif %}
 
+	
+	{% if not is_index %}
+	  <div>
+		{% include 'passage-end-tag.swig' %}
+	  </div>
+	{% endif %}
+	
+	
     <footer class="post-footer">
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">
           {% for tag in post.tags %}
-            <a href="{{ url_for(tag.path) }}" rel="tag"># {{ tag.name }}</a>
+            <a href="{{ url_for(tag.path) }}" rel="tag"><i class="fa fa-tag"></i> {{ tag.name }}</a>
           {% endfor %}
         </div>
       {% endif %}
@@ -383,6 +391,15 @@
                 <div class="fb-like" data-layout="button_count" data-share="true"></div>
               </div>
             {% endif %}
+			
+			{% if theme.leancloud_visitors.enable %}
+			&nbsp; | &nbsp;
+			<span id="{{ url_for(post.path) }}"class="leancloud_visitors" data-flag-title="{{ post.title }}">
+			&nbsp;{{__('post.visitors')}}
+			</span>
+			{% endif %}
+			
+			
           </div>
         {% endif %}
 
