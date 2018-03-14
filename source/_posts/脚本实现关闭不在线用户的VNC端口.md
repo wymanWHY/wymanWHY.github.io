@@ -1,6 +1,6 @@
 ---
 title: 脚本实现批量关闭闲置用户的VNC端口
-date: 2018-03-02 11:24:47
+date: 2015-02-02 11:24:47
 categories: shell
 tags: 
 	- shell

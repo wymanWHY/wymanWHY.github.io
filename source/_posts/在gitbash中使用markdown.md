@@ -1,6 +1,6 @@
 ---
 title: 在gitbash中使用markdown
-date: 2018-02-07 18:48:30
+date: 2014-12-07 18:48:30
 categories: git
 tags:
 	- gitbash
