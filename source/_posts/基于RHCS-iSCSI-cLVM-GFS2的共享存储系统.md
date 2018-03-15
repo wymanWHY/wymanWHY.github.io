@@ -9,6 +9,8 @@ tags:
 	- GFS2
 	- 集群
 	- 存储
+images: /images/iscsi.jpg
+
 ---
 
 {% asset_img 00.jpg %}
