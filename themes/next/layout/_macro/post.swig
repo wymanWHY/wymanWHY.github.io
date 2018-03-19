@@ -210,6 +210,7 @@
                  <span class="post-meta-item-text">{{__('post.visitors')}}&#58;</span>
                {% endif %}
                  <span class="leancloud-visitors-count"></span>
+				 <span>℃</span>
              </span>
           {% endif %}
 
@@ -292,6 +293,11 @@
       {% if is_index %}
         {% if post.description and theme.excerpt_description %}
           {{ post.description }}
+			{% if post.images %}
+				<div class="out-img-topic">
+					<img src={{ post.images }} class="img-topic">
+				</div>
+			{% endif %}
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="{{ url_for(post.path) }}">
