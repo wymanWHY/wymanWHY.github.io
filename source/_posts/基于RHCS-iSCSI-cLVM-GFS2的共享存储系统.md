@@ -1,6 +1,6 @@
 ---
 title: 基于RHCS+iSCSI+cLVM+GFS2的共享存储系统
-date: 2016-12-12 10:02:13
+date: 2016-01-12 10:02:13
 categories: Linux OPS
 tags:
 	- RHCS
