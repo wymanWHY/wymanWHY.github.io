@@ -1,6 +1,6 @@
 ---
 title: Dockerfile 基本格式
-date: 2018-03-29 18:54:19
+date: 2016-11-21 18:54:19
 categories: Docker
 tags:
     - Docker
@@ -43,7 +43,7 @@ RUN apt-get -yqq update && apt-get install -yqq apache2
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
 ```
 
-通过阅读上述内容中我们熟悉的一些 linux 指令，可以很容易的得出该命令创建了一个 apache 的镜像。包含了最基本的四项信息。
+通过阅读上述内容可以很容易的创建一个 apache 的镜像。包含了最基本的四项信息。
 
 其中 **FROM** 指定基础镜像。
 
@@ -76,3 +76,14 @@ ec5a723f4e2a: Download complete
 46e451596b7c: Download complete
 ...
 ```
+
+构建过程比较慢，在构建完成后，我们可以使用该镜像启动一个容器来运行 apache 服务，运行如下命令：
+
+```
+    # 使用 -p 参数将本机的 8000 端口映射到容器中的 80 端口上。
+$ docker container run -d -p 8000:80 --name wyman_docker wyman:1.0
+```
+
+容器启动成功后，并且配置了端口映射，我们就可以通过本机的 8000 端口访问容器 wyman_docker 中的 apache 服务了。我们打开浏览器，输入 localhost:8000
+
+即可看到熟悉的apache问候界面了
