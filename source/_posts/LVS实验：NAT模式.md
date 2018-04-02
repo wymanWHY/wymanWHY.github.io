@@ -1,6 +1,6 @@
 ---
 title: LVS实验：NAT模式
-date: 2018-03-05 18:17:10
+date: 2017-07-05 18:17:10
 categories: Linux OPS
 tags:
 	- LVS

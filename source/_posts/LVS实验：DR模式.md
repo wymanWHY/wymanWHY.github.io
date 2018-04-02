@@ -1,6 +1,6 @@
 ---
 title: LVS实验：DR模式
-date: 2018-03-05 18:32:57
+date: 2017-07-06 10:32:57
 categories: Linux OPS
 tags:
 	- LVS
@@ -10,7 +10,7 @@ tags:
 
 
 
-> NAT模式的相关配置操作请参考[《LVS实验之NAT模式的实现》](http://wyman.wang/2018/03/05/LVS%E5%AE%9E%E9%AA%8C%EF%BC%9ANAT%E6%A8%A1%E5%BC%8F/)
+> NAT模式的相关配置操作请参考[《LVS实验之NAT模式的实现》](http://wyman.wang/2017/07/05/LVS%E5%AE%9E%E9%AA%8C%EF%BC%9ANAT%E6%A8%A1%E5%BC%8F/)
 
 
 和NAT模式不同的是，在DR实验中，我们新增一台容器作为Load Balancer，架构变更为：
