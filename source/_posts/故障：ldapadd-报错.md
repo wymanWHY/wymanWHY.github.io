@@ -1,6 +1,6 @@
 ---
 title: 故障：ldapadd 报错
-date: 2018-04-03 15:01:14
+date: 2018-01-03 15:01:14
 categories: Linux OPS
 tags:
     - LDAP
