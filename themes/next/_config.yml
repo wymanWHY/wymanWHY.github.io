@@ -294,7 +294,7 @@ highlight_theme: night bright
 # Arial | Tahoma | Helvetica | Times New Roman | Courier New | Verdana | Georgia | Palatino | Garamond | Comic Sans MS | Trebuchet MS
 # ---------------------------------------------------------------
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host. E.g. //fonts.googleapis.com (Default).
   host:
@@ -307,15 +307,16 @@ font:
   # Global font settings used on <body> element.
   global:
     external: true
-    family: Lato
-    size:
+    #family: Lato
+    family: Monda
+    #size:
 
   # Font settings for Headlines (h1, h2, h3, h4, h5, h6).
   # Fallback to `global` font settings.
   headings:
     external: true
-    family:
-    size:
+    family: Roboto Slab
+    #size:
 
   # Font settings for posts.
   # Fallback to `global` font settings.
@@ -327,14 +328,14 @@ font:
   # Fallback to `global` font settings.
   logo:
     external: true
-    family:
-    size:
+    family: Lobster Two
+    size: 24
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
-    size:
+    family: PT Mono
+    #size:
 
 
 # ---------------------------------------------------------------
@@ -407,7 +408,7 @@ gitment:
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
   cleanly: false # Hide 'Powered by ...' on footer, and more
-  language: # Force language, or auto switch by theme
+  language: zh-CN # Force language, or auto switch by theme
   github_user: # MUST HAVE, Your Github ID
   github_repo: # MUST HAVE, The repo you use to store Gitment comments
   client_id: # MUST HAVE, Github client id for the Gitment
@@ -426,9 +427,9 @@ gitment:
 # This plugin is more useful in China, make sure you known how to use it.
 # And you can find the use guide at official webiste: http://www.jiathis.com/.
 # Warning: JiaThis does not support https.
-jiathis: true
+#jiathis: true
   ##uid: Get this uid from http://www.jiathis.com/
-#add_this_id:
+add_this_id: ra-5ae2a9907c5fffe7
 
 # Share
 #duoshuo_share: true
@@ -572,6 +573,7 @@ busuanzi_count:
 # tencent_mta:
 
 baidu_site_verification: <meta name="baidu-site-verification" content="CtZo9kj7B0" />
+google_site_verification: <meta name="google-site-verification" content="dyFD2CoavGYB1U5PthknwCrFBwmDJENc9NUHB3HBcaE" />
 
 
 

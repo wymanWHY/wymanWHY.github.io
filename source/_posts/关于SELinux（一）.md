@@ -2,19 +2,22 @@
 title: 来来来，SELinux了解一下
 date: 2017-08-11 15:39:08
 categories: Linux OPS
-
 tags:
     - SELinux
+
 ---
-> [参考鸟哥私房菜《第十六章、程序管理與 SELinux 初探》：](http://linux.vbird.org/linux_basic/0440processcontrol.php#selinux)
-> 
+
 
 {% asset_img 2.jpg %}
 
 SELinux是个神奇的东西，这货幽灵般地存在内核中，经常让我们的程序挂得莫名其妙。
 
+<!-- more -->
+
 ---
 
+> [参考鸟哥私房菜《第十六章、程序管理與 SELinux 初探》：](http://linux.vbird.org/linux_basic/0440processcontrol.php#selinux)
+> 
 ## 来头 ##
 
 SELinux 来头不小，它是由美国国家安全菊——NSA开发诞生的，它的诞生主要是用于解决**内部程序及资源误用而产生的事故，是一种系统内部控制手段，用于管理系统内应用的存取控制。**

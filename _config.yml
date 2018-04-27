@@ -4,15 +4,15 @@
 
 # Site
 title: Wyman's
-subtitle:
-description: --Be "CURIOUS" , Be "MODEST"-- To explore the "WHAT" , To find out the "WHY"
+subtitle: 论总结的重要性
+description: 保持好奇 | 适当谦虚
 author: Wyman
 language: zh-Hans
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://wyman.wang
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -73,6 +73,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+#theme: hueman
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -80,3 +81,8 @@ deploy:
   type: git
   repo: git@github.com:wymanWHY/wymanWHY.github.io.git
   branch: master
+  
+sitemap: 
+  path: sitemap.xml
+baidusitemap: 
+  path: baidusitemap.xml

@@ -18,7 +18,7 @@
     <link itemprop="mainEntityOfPage" href="{{ config.url }}{{ url_for(post.path) }}">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="{{ theme.author }}">
+      <meta itemprop="name" content="{{ theme.author }}" charset=UTF-8">
       <meta itemprop="description" content="{{ theme.signature }}">
       <meta itemprop="image" content="{{ url_for( theme.avatar | default(theme.images + '/avatar.gif') ) }}">
     </span>
@@ -340,6 +340,8 @@
     {### END POST BODY ###}
     {#####################}
 
+	
+	
     {% if theme.wechat_subscriber.enabled and not is_index %}
       <div>
         {% include 'wechat-subscriber.swig' %}
@@ -365,6 +367,14 @@
 	  </div>
 	{% endif %}
 	
+    <div>
+	    <p id="div-border-left-red">
+	   <br/>
+	    <span>
+	    <b>本文地址：</b><a href="{{ url_for(page.path) }}" title="{{ page.title }}">{{ page.permalink }}</a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	    </p>
+    </div>
 	
     <footer class="post-footer">
       {% if post.tags and post.tags.length and not is_index %}

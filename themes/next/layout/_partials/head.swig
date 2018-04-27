@@ -35,7 +35,7 @@
 
 
 {% if theme.google_site_verification %}
-  <meta name="google-site-verification" content="{{ theme.google_site_verification }}" />
+  <meta name="google-site-verification" content="dyFD2CoavGYB1U5PthknwCrFBwmDJENc9NUHB3HBcaE" />
 {% endif %}
 
 {% if theme.bing_site_verification %}
@@ -50,6 +50,7 @@
 {% if theme.baidu_site_verification %}
   <meta name="baidu-site-verification" content="CtZo9kj7B0" />
 {% endif %}
+
 
 {% if theme.qihu_site_verification %}
   <meta name="360-site-verification" content="{{ theme.qihu_site_verification }}" />
