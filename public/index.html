@@ -27,6 +27,8 @@
 
 
 
+  <meta name="google-site-verification" content="dyFD2CoavGYB1U5PthknwCrFBwmDJENc9NUHB3HBcaE" />
+
 
 
 
@@ -41,10 +43,55 @@
 
 
 
+
   
   
   <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
 
 
 
@@ -82,17 +129,16 @@
 
 
 
-<meta name="description" content="--Be &quot;CURIOUS&quot; , Be &quot;MODEST&quot;-- To explore the &quot;WHAT&quot; , To find out the &quot;WHY&quot;">
-<meta name="keywords" content="Linux,devops,运维,服务器管理">
+<meta name="description" content="保持好奇 | 适当谦虚">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Wyman&#39;s">
 <meta property="og:url" content="http://wyman.wang/index.html">
 <meta property="og:site_name" content="Wyman&#39;s">
-<meta property="og:description" content="--Be &quot;CURIOUS&quot; , Be &quot;MODEST&quot;-- To explore the &quot;WHAT&quot; , To find out the &quot;WHY&quot;">
+<meta property="og:description" content="保持好奇 | 适当谦虚">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Wyman&#39;s">
-<meta name="twitter:description" content="--Be &quot;CURIOUS&quot; , Be &quot;MODEST&quot;-- To explore the &quot;WHAT&quot; , To find out the &quot;WHY&quot;">
+<meta name="twitter:description" content="保持好奇 | 适当谦虚">
 
 
 
@@ -128,7 +174,7 @@
 
 
 
-  <title> Linux,devops,运维,服务器 - Wyman's--Be "CURIOUS" , Be "MODEST"-- To explore the "WHAT" , To find out the "WHY" </title>
+  <title> Linux,devops,运维,服务器 - Wyman's保持好奇 | 适当谦虚 </title>
   
 
 
@@ -164,7 +210,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">论总结的重要性</p>
       
   </div>
 
@@ -266,10 +312,10 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wyman.wang/LVS实验：DR模式.html">
+    <link itemprop="mainEntityOfPage" href="http://wyman.wang/2018/04/11/expect初体验/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wyman">
+      <meta itemprop="name" content="Wyman" charset=UTF-8">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
@@ -285,7 +331,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/LVS实验：DR模式.html" itemprop="url">LVS实验：DR模式</a></h1>
+                <a class="post-title-link" href="/2018/04/11/expect初体验/" itemprop="url">expect初体验</a></h1>
         
 
         <div class="post-meta">
@@ -297,8 +343,180 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-05T18:32:57+08:00">
-                2018-03-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-11T09:07:48+08:00">
+                2018-04-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux-OPS/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux OPS</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux-OPS/shell/" itemprop="url" rel="index">
+                    <span itemprop="name">shell</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>使用命令行与机器打交道，难免会出现需要交互的时候，比如用passwd修改密码，会提示你输入两遍密码确认；比如用ssh访问远程机器，会要求输入密码，这些都需要人工手动参与执行操作。但很多无人值守的情况下如何完成交互，这里，我们可以使用expect。</p>
+<p>通过expect，可以让我们将预先需要准备手工干预的部分提前备好，等到出现相应提示信息（或返回信号），将我们准备的参数与要执行的语句以send命令交给机器。所以在使用expect前，你需要详细了解你要完成的任务的具体流程，详细到什么时候会出现什么提示。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/04/11/expect初体验/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	
+	
+    
+
+    
+
+    
+
+	
+	
+	
+    <div>
+	    <p id="div-border-left-red">
+	   <br/>
+	    <span>
+	    <b>本文地址：</b><a href="/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	    </p>
+    </div>
+	
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wyman.wang/2018/04/02/SELinux惹的祸/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wyman" charset=UTF-8">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wyman's">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/02/SELinux惹的祸/" itemprop="url">都是SELinux惹的祸</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-02T18:30:14+08:00">
+                2018-04-02
               </time>
             
 
@@ -359,17 +577,18 @@
       
         
           
-          
-NAT模式的相关配置操作请参考《LVS实验之NAT模式的实现》
+          最近半个月，在进行服务器配置改造的过程中，接二连三遇到一些诡异的问题：
 
-和NAT模式不同的是，在DR实验中，我们新增一台容器作为Load Balancer，架构变更为：
+RSH无密码访问各项配置正确，却死活不成功
+ldap各项配置正确，却死活不成功
+nfs挂载各项配置正常，却死活不成功
+还有那啥啥啥（对，什么都不顺），依旧死活不成功
 
-宿主机环境：充当客户端访问 web 服务；
-LoadBalancer 的 container：装有 ipvsadm，充当负载均衡调度
+要不是突然想起SELinux，还真以为是水逆惹的祸，如果你
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/LVS实验：DR模式.html#more" rel="contents">
+            <a class="btn" href="/2018/04/02/SELinux惹的祸/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -381,6 +600,8 @@ LoadBalancer 的 container：装有 ipvsadm，充当负载均衡调度
     
     
 
+	
+	
     
 
     
@@ -390,6 +611,14 @@ LoadBalancer 的 container：装有 ipvsadm，充当负载均衡调度
 	
 	
 	
+    <div>
+	    <p id="div-border-left-red">
+	   <br/>
+	    <span>
+	    <b>本文地址：</b><a href="/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	    </p>
+    </div>
 	
     <footer class="post-footer">
       
@@ -424,10 +653,10 @@ LoadBalancer 的 container：装有 ipvsadm，充当负载均衡调度
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wyman.wang/LVS实验：NAT模式.html">
+    <link itemprop="mainEntityOfPage" href="http://wyman.wang/2018/03/28/谁是谁的过客/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wyman">
+      <meta itemprop="name" content="Wyman" charset=UTF-8">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
@@ -443,7 +672,7 @@ LoadBalancer 的 container：装有 ipvsadm，充当负载均衡调度
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/LVS实验：NAT模式.html" itemprop="url">LVS实验：NAT模式</a></h1>
+                <a class="post-title-link" href="/2018/03/28/谁是谁的过客/" itemprop="url">谁是谁的过客</a></h1>
         
 
         <div class="post-meta">
@@ -455,8 +684,8 @@ LoadBalancer 的 container：装有 ipvsadm，充当负载均衡调度
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-05T18:17:10+08:00">
-                2018-03-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-28T19:25:06+08:00">
+                2018-03-28
               </time>
             
 
@@ -478,8 +707,8 @@ LoadBalancer 的 container：装有 ipvsadm，充当负载均衡调度
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux-OPS/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux OPS</span>
+                  <a href="/categories/生活/" itemprop="url" rel="index">
+                    <span itemprop="name">生活</span>
                   </a>
                 </span>
 
@@ -517,15 +746,14 @@ LoadBalancer 的 container：装有 ipvsadm，充当负载均衡调度
       
         
           
-          实验利用用两台docker容器完成web请求响应，使用nginx来验证LVS功能
-实验的LVS集群按功能模块分为： Load Balancer + RealServer 两个模块
-其中：
-
-Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实现对后端服务器实现负载均衡功能
+          A
+今天，一个朋友离开了SZ，隔着朋友圈都能感受到他此刻躺在卧铺车厢上的百感交集，我俩在五年前的5月认识，又在五年前的七月一块来到这座城市
+小伙子比我年少5岁，5年前刚毕业时那叫一个青春活力，阳光四射，说话就像机关枪，站他边上我都能感受到他的澎湃，就像十年前的我
+17年末，这哥们维持了一年多的爱情，
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/LVS实验：NAT模式.html#more" rel="contents">
+            <a class="btn" href="/2018/03/28/谁是谁的过客/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -537,6 +765,8 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
     
     
 
+	
+	
     
 
     
@@ -546,6 +776,14 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
 	
 	
 	
+    <div>
+	    <p id="div-border-left-red">
+	   <br/>
+	    <span>
+	    <b>本文地址：</b><a href="/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	    </p>
+    </div>
 	
     <footer class="post-footer">
       
@@ -580,10 +818,10 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wyman.wang/在hexo中加入liveRe评论功能.html">
+    <link itemprop="mainEntityOfPage" href="http://wyman.wang/2018/03/23/老骥伏枥，尚能饭否？/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wyman">
+      <meta itemprop="name" content="Wyman" charset=UTF-8">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
@@ -599,7 +837,173 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/在hexo中加入liveRe评论功能.html" itemprop="url">在hexo中加入liveRe(来必力)评论功能</a></h1>
+                <a class="post-title-link" href="/2018/03/23/老骥伏枥，尚能饭否？/" itemprop="url">老骥伏枥，尚能饭否？</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-23T18:08:07+08:00">
+                2018-03-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/生活/" itemprop="url" rel="index">
+                    <span itemprop="name">生活</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          欲望得不到满足而失控，蔓延到全身，化作焦虑和烦躁
+镜子中的自己，满眼的物欲和贪婪，佛教中所说的五毒贪、嗔、痴、慢、疑五种心，似乎在我身上体现得都很彻底
+当然，所带来的结果也很彻底。
+但所谓天助自助之人，不论生活怎样的困顿和迷茫，依旧顽强学习和积极向上，
+保持着上进的心不变，如果老天没有给到自己一些奖
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/03/23/老骥伏枥，尚能饭否？/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	
+	
+    
+
+    
+
+    
+
+	
+	
+	
+    <div>
+	    <p id="div-border-left-red">
+	   <br/>
+	    <span>
+	    <b>本文地址：</b><a href="/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	    </p>
+    </div>
+	
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wyman.wang/2018/03/02/在hexo中加入liveRe评论功能/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wyman" charset=UTF-8">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wyman's">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/02/在hexo中加入liveRe评论功能/" itemprop="url">在hexo中加入liveRe(来必力)评论功能</a></h1>
         
 
         <div class="post-meta">
@@ -655,7 +1059,7 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/在hexo中加入liveRe评论功能.html#more" rel="contents">
+            <a class="btn" href="/2018/03/02/在hexo中加入liveRe评论功能/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -667,6 +1071,8 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
     
     
 
+	
+	
     
 
     
@@ -676,6 +1082,14 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
 	
 	
 	
+    <div>
+	    <p id="div-border-left-red">
+	   <br/>
+	    <span>
+	    <b>本文地址：</b><a href="/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	    </p>
+    </div>
 	
     <footer class="post-footer">
       
@@ -710,10 +1124,10 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wyman.wang/LVS概要.html">
+    <link itemprop="mainEntityOfPage" href="http://wyman.wang/2018/02/12/信仰的力量/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wyman">
+      <meta itemprop="name" content="Wyman" charset=UTF-8">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
@@ -729,164 +1143,7 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/LVS概要.html" itemprop="url">LVS概要</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-27T11:49:06+08:00">
-                2018-02-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux-OPS/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux OPS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          LVS 的组成
-由于 LVS 只是对 IP 进行处理，对数据包的内容并不关心，所以称为基于 IP 的负载均衡技术。
-
-三个层次：
-
-负载调度器层（load balancer）：它是整个集群对外面的前端机，负责将客户端的请求发送到一组后端服务器上执行，负载调度层通常由一台或者多台负载调度器(Direc
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/LVS概要.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-	
-	
-	
-	
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wyman.wang/信仰的力量.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wyman">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wyman's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/信仰的力量.html" itemprop="url">信仰的力量</a></h1>
+                <a class="post-title-link" href="/2018/02/12/信仰的力量/" itemprop="url">信仰的力量</a></h1>
         
 
         <div class="post-meta">
@@ -968,7 +1225,7 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/信仰的力量.html#more" rel="contents">
+            <a class="btn" href="/2018/02/12/信仰的力量/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -980,6 +1237,8 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
     
     
 
+	
+	
     
 
     
@@ -989,6 +1248,14 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
 	
 	
 	
+    <div>
+	    <p id="div-border-left-red">
+	   <br/>
+	    <span>
+	    <b>本文地址：</b><a href="/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	    </p>
+    </div>
 	
     <footer class="post-footer">
       
@@ -1023,10 +1290,10 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wyman.wang/北京，北京.html">
+    <link itemprop="mainEntityOfPage" href="http://wyman.wang/2018/02/09/北京，北京/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wyman">
+      <meta itemprop="name" content="Wyman" charset=UTF-8">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
@@ -1042,7 +1309,7 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/北京，北京.html" itemprop="url">北京，北京</a></h1>
+                <a class="post-title-link" href="/2018/02/09/北京，北京/" itemprop="url">北京，北京</a></h1>
         
 
         <div class="post-meta">
@@ -1122,7 +1389,7 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/北京，北京.html#more" rel="contents">
+            <a class="btn" href="/2018/02/09/北京，北京/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1134,6 +1401,8 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
     
     
 
+	
+	
     
 
     
@@ -1143,6 +1412,14 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
 	
 	
 	
+    <div>
+	    <p id="div-border-left-red">
+	   <br/>
+	    <span>
+	    <b>本文地址：</b><a href="/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	    </p>
+    </div>
 	
     <footer class="post-footer">
       
@@ -1177,10 +1454,10 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wyman.wang/写在前面.html">
+    <link itemprop="mainEntityOfPage" href="http://wyman.wang/2018/01/03/故障：ldapadd-报错/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wyman">
+      <meta itemprop="name" content="Wyman" charset=UTF-8">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
@@ -1196,7 +1473,7 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/写在前面.html" itemprop="url">写在前面</a></h1>
+                <a class="post-title-link" href="/2018/01/03/故障：ldapadd-报错/" itemprop="url">故障：ldapadd 报错</a></h1>
         
 
         <div class="post-meta">
@@ -1208,8 +1485,8 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-04T16:52:59+08:00">
-                2018-02-04
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-03T15:01:14+08:00">
+                2018-01-03
               </time>
             
 
@@ -1218,6 +1495,28 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux-OPS/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux OPS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -1248,12 +1547,14 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
       
         
           
-          Foreword今日立春，按理从此雪消风自软，梅花合让柳条新。但似乎天气依旧不作美，依旧冷风凛冽；独自坐在房间里，靠着跺脚和抖腿，磨磨唧唧地把博客搬迁至github中了Mark一下
-
-          
+          Can’t contact LDAP server使用LDAPADD配置LDAP用户的时候，突然报错：
+1ldap_sasl_bind(SIMPLE): Can&apos;t contact LDAP server (-1)
+原因在于：使用的主机名称与dc名不一致导致的
+解决办法：用 -h 参数指定
+          ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/写在前面.html#more" rel="contents">
+            <a class="btn" href="/2018/01/03/故障：ldapadd-报错/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1265,6 +1566,8 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
     
     
 
+	
+	
     
 
     
@@ -1274,6 +1577,14 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
 	
 	
 	
+    <div>
+	    <p id="div-border-left-red">
+	   <br/>
+	    <span>
+	    <b>本文地址：</b><a href="/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	    </p>
+    </div>
 	
     <footer class="post-footer">
       
@@ -1308,10 +1619,10 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wyman.wang/基于RHCS-iSCSI-cLVM-GFS2的共享存储系统.html">
+    <link itemprop="mainEntityOfPage" href="http://wyman.wang/2017/08/11/关于SELinux（一）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wyman">
+      <meta itemprop="name" content="Wyman" charset=UTF-8">
       <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.jpg">
     </span>
@@ -1327,7 +1638,7 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/基于RHCS-iSCSI-cLVM-GFS2的共享存储系统.html" itemprop="url">基于RHCS+iSCSI+cLVM+GFS2的共享存储系统</a></h1>
+                <a class="post-title-link" href="/2017/08/11/关于SELinux（一）/" itemprop="url">来来来，SELinux了解一下</a></h1>
         
 
         <div class="post-meta">
@@ -1339,8 +1650,169 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-12-12T10:02:13+08:00">
-                2016-12-12
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-11T15:39:08+08:00">
+                2017-08-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux-OPS/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux OPS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <img src="/2017/08/11/关于SELinux（一）/2.jpg">
+<p>SELinux是个神奇的东西，这货幽灵般地存在内核中，经常让我们的程序挂得莫名其妙。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/11/关于SELinux（一）/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+	
+	
+    
+
+    
+
+    
+
+	
+	
+	
+    <div>
+	    <p id="div-border-left-red">
+	   <br/>
+	    <span>
+	    <b>本文地址：</b><a href="/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	    </p>
+    </div>
+	
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wyman.wang/2017/07/06/LVS实验：DR模式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Wyman" charset=UTF-8">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Wyman's">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/06/LVS实验：DR模式/" itemprop="url">LVS实验：DR模式</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-06T10:32:57+08:00">
+                2017-07-06
               </time>
             
 
@@ -1402,17 +1874,16 @@ Load Balancer由宿主机实现，位于集群系统的前端，通过ipvsadm实
         
           
           
-共享存储是集群的重要组成部分之一，iSCSI使用TCP/IP网络协议完成原本需要FC光纤通道完成的功能，利用网络实现磁盘等块级存储设备在网络上的存储
-iSCSI的 组成一个简单的iSCSI系统主要分以下两部分：
+NAT模式的相关配置操作请参考《LVS实验之NAT模式的实现》
 
-iSCSI target 
-iSCSI Initiator
+和NAT模式不同的是，在DR实验中，我们新增一台容器作为Load Balancer，架构变更为：
 
-（当然还有交换机、HB
+宿主机环境：充当客户端访问 web 服务；
+LoadBalancer 的 container：装有 ipvsadm，充当负载均衡调度
           ...
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/基于RHCS-iSCSI-cLVM-GFS2的共享存储系统.html#more" rel="contents">
+            <a class="btn" href="/2017/07/06/LVS实验：DR模式/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1424,6 +1895,8 @@ iSCSI Initiator
     
     
 
+	
+	
     
 
     
@@ -1433,321 +1906,14 @@ iSCSI Initiator
 	
 	
 	
-	
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wyman.wang/在线调整LV卷的大小.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wyman">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wyman's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/在线调整LV卷的大小.html" itemprop="url">在线调整LV卷的大小</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-04-11T17:05:48+08:00">
-                2015-04-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Linux-OPS/" itemprop="url" rel="index">
-                    <span itemprop="name">Linux OPS</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          /tmp目录不知道是哪个挨千刀的设置的，容量太小，时不时就满；
-服务器磁盘无法立即扩容，但幸好其他卷的剩余空间足够大，于是，我们想着从隔壁卷(/backup)抽调一些空间出来，分配给/tmp所在LV卷
-大致分为两个环节：
-一、缩减其他LV卷的空间1、卸载需要缩减空间的LV卷所挂载的文件系统首先，df
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/在线调整LV卷的大小.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
+    <div>
+	    <p id="div-border-left-red">
+	   <br/>
+	    <span>
+	    <b>本文地址：</b><a href="/index.html" title=""></a><br/><b>转载请注明出处，谢谢！</b>
+	    </span>
+	    </p>
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-	
-	
-	
-	
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://wyman.wang/脚本实现关闭不在线用户的VNC端口.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Wyman">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Wyman's">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/脚本实现关闭不在线用户的VNC端口.html" itemprop="url">脚本实现批量关闭闲置用户的VNC端口</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-02-02T11:24:47+08:00">
-                2015-02-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/shell/" itemprop="url" rel="index">
-                    <span itemprop="name">shell</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-VNC是一个利用端口号允许用户远程登录服务器的客户端程序
-开启VNC登录端口的用户会在服务器后台运行用户的主控程序Xvnc的进程
-但开启后用户长期不登录进程会一直驻留在后台，因此，写了个脚本批量关闭闲置的Xvnc进程：
-
-
-一、查看现运行的Xvnc进程ps ef |grep Xvnc
-
-第一列及第
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/脚本实现关闭不在线用户的VNC端口.html#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-	
-	
-	
 	
     <footer class="post-footer">
       
@@ -1773,7 +1939,7 @@ VNC是一个利用端口号允许用户远程登录服务器的客户端程序
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1813,7 +1979,7 @@ VNC是一个利用端口号允许用户远程登录服务器的客户端程序
                 alt="Wyman" />
             
               <p class="site-author-name" itemprop="name">Wyman</p>
-              <p class="site-description motion-element" itemprop="description">--Be "CURIOUS" , Be "MODEST"-- To explore the "WHAT" , To find out the "WHY"</p>
+              <p class="site-description motion-element" itemprop="description">保持好奇 | 适当谦虚</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -1823,7 +1989,7 @@ VNC是一个利用端口号允许用户远程登录服务器的客户端程序
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-count">29</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1834,7 +2000,7 @@ VNC是一个利用端口号允许用户远程登录服务器的客户端程序
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -1845,7 +2011,7 @@ VNC是一个利用端口号允许用户远程登录服务器的客户端程序
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-count">37</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>

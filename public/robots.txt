@@ -13,3 +13,4 @@ Disallow: /vendors/
 Disallow: /fancybox/
 
 Sitemap: http://wyman.wang/baidusitemap.xml
+Sitemap: http://wyman.wang/sitemap.xml
