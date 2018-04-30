@@ -113,6 +113,8 @@ ifconfig eth0:0 192.168.0.10 netmask 255.255.255.0 up`
 和NAT模式一样，按住F5不断刷新，看页面是否变化，验证LVS是否正常工作
 
 
-{% asset_img 4.png %}
 
-{% asset_img 5.png %}
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/75011910.jpg)
+
+
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/75011910.jpg)

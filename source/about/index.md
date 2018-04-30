@@ -8,8 +8,8 @@ tags:
 ---
 
 
-<img src="/images/about.jpg">
 
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/90196739.jpg)
 
 
 {% cq %} **魔系运维** | **隔壁老王** | **爱折腾，爱分享** | **人畜无害** | **娇羞慢热** {% endcq %}

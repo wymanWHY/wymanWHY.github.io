@@ -8,7 +8,7 @@ tags:
 ---
 
 
-{% asset_img 2.jpg %}
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/5859741.jpg)
 
 {% cq %}SELinux是个神奇的东西，这货幽灵般地存在内核中，经常让我们的程序挂得莫名其妙。{% endcq %}
 
@@ -22,7 +22,7 @@ tags:
 
 SELinux 来头不小，它是由美国国家安全菊——NSA开发诞生的，它的诞生主要是用于解决**内部程序及资源误用而产生的事故，是一种系统内部控制手段，用于管理系统内应用的存取控制。**
 
-{% asset_img 0.jpg %}
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/18319261.jpg)
 
 在之前，先了解并区分一下**自主式访问控制 (Discretionary Access Control, DAC)**与**强制式访问控制 (Mandatory Access Control, MAC)**
 
@@ -36,7 +36,7 @@ SELinux 来头不小，它是由美国国家安全菊——NSA开发诞生的，
 
 MAC将程序和路径的权限进行了管控，即是是root，在使用不同的程序时，你所能获取到的权限也不一定是root，而是要看该程序的设定来确定你对该路径具有怎样的权限。也就是说，**MAC将控制主体由用户转向了程序。**每个路径都有其所对应的主体程序，于是，在MAC的限制下，每个程序的活动范围变小了，比如，我们在开启SELinux的情况下会发现，apache只认可/var/www/html这个目录下的页面，所有设置到其他路径下的页面都无法打开。因为httpd程序只能在/var/www/下进行访问，而出了这个路径，其他目录也得要设置为httpd所能访问的类型才可以。MAC好比一个看不见的牢笼，将httpd圈在了我们所设定的范围内，架设apache真的被别有用心的人获取了控制权，他也没法访问我们系统内的其他文件。**这也是我前面说到的，SELinux强调内部程序访问管控，缩小程序的权限范围**。如图：
 
-{% asset_img 1.jpg apache在DAC、MAC下的不同权限范围 %}
+![apache在DAC、MAC下的不同权限范围](http://p7wcdketk.bkt.clouddn.com/18-4-30/73004850.jpg)
 
 ---
 

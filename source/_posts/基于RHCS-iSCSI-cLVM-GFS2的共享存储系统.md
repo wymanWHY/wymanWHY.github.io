@@ -13,7 +13,7 @@ images: /images/iscsi.jpg
 
 ---
 
-{% asset_img 00.jpg %}
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/60474659.jpg)
 
 共享存储是集群的重要组成部分之一，iSCSI使用TCP/IP网络协议完成原本需要FC光纤通道完成的功能，利用网络实现磁盘等块级存储设备在网络上的存储
 
@@ -95,11 +95,11 @@ RHCS集群套件在系统光盘上自带，使用yum即可直接进行安装：
 
 在“ManagerCluster”中选择“Create”创建一个集群
 
-{% asset_img 6.JPG %}
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/44115191.jpg)
 
 经过简单的账号密码节点名的输入配置后,集群成功创建并启动：
 
-{% asset_img 7.JPG %}
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/66224217.jpg)
 
 > **坑1**：在各节点上创建ricci用户，并创建密码，可避免出现ricci启动失败的情况；
 
@@ -110,7 +110,7 @@ RHCS集群套件在系统光盘上自带，使用yum即可直接进行安装：
 
 稍等一会，等圈圈转完之后，集群创建成功：
 
-{% asset_img 8.JPG %}
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/95579908.jpg)
 
 ### 二、iSCSI配置 ###
 
@@ -188,7 +188,7 @@ RHCS集群套件在系统光盘上自带，使用yum即可直接进行安装：
 > 当然，我们也可以在target上查看已连接该target的所有initiator：
     tgt-admin --show
 
-{% asset_img 19.JPG %}
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/8412411.jpg)
 
 **到这，iSCSI的配置就完成了**
 
@@ -231,7 +231,7 @@ lvcreate -L 2T -n lv_cluster_home
     pvs
     lvs
 ```
-{% asset_img 20.JPG %}
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/90363727.jpg)
 
 确认都OK
 
@@ -252,7 +252,7 @@ lvcreate -L 2T -n lv_cluster_home
 
 在弹出的对话框中，选择y，没有意外的话，文件系统格式化成功
 
-{% asset_img 16.JPG %}
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/44164672.jpg)
 
 ---
 
@@ -266,7 +266,7 @@ lvcreate -L 2T -n lv_cluster_home
 
 在node2上也将/dev/vg_cluster/lv_cluster_home挂载到/home下面，ls一下，发现1文件存在
 
-{% asset_img 21.JPG %}
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/14553769.jpg)
 
 
 在node1上的1文件上写点东西，看看node2上能否立刻同步
@@ -275,7 +275,7 @@ lvcreate -L 2T -n lv_cluster_home
 
 在node2上查看一下1文件
 	
-{% asset_img 22.JPG %}
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/34465877.jpg)
 
 OK,node2上也有了
 

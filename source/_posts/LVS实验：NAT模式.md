@@ -66,15 +66,16 @@ apt-get install vim nginx -y
 vi /usr/share/nginx/html/index.html
 ```
 
-{% asset_img 1.png %}
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/59868212.jpg)
 
 **PS: 改好后记得重启nginx服务 **
 
 在宿主机上使用浏览器验证两台容器的web服务是否正常工作：
 
-{% asset_img 2.png %}
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/59868212.jpg)
 
-{% asset_img 3.png %}
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/5519228.jpg)
+
 
 ### 三、修改调度规则 ###
 
@@ -109,9 +110,10 @@ LB本机IP:80 定义集群服务的 IP 地址（VIP） 和应用端口
 
 使用浏览器打开本机IP，按住F5作死地刷新，看到页面不一致则说明LVS起作用了
 
-{% asset_img 4.png %}
 
-{% asset_img 5.png %}
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/20472635.jpg)
 
+
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/41208663.jpg)
 
 

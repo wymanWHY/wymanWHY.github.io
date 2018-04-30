@@ -20,7 +20,7 @@ RSH配了半个上午，一直没有成功，简直崩溃。反复了三回之�
 
 发现rsh居然存在于kerberos下：
 
-{% asset_img 1.JPG %}
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/16836244.jpg)
 
 
 再试着查看一下本机所安装的rsh版本信息：
@@ -29,7 +29,7 @@ RSH配了半个上午，一直没有成功，简直崩溃。反复了三回之�
 
 显示为：
 
-{% asset_img 4.JPG %}
+![](http://p7wcdketk.bkt.clouddn.com/18-4-30/52581489.jpg)
 
 果然幕后黑手是kerberos
 
