@@ -113,3 +113,13 @@ $ nl text.txt |sed  '5,7p'
 ![](http://p7wcdketk.bkt.clouddn.com/18-5-3/81111235.jpg)
 
 
+
+---
+
+参考文档：
+
+- [SED单行脚本快速参考](http://sed.sourceforge.net/sed1line_zh-CN.html)
+
+- [sed简明教程](https://coolshell.cn/articles/9104.html)
+
+- [官方文档](https://www.gnu.org/software/sed/manual/sed.html)
