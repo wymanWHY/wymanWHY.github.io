@@ -35,7 +35,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: Linux,devops,运维,服务器
+keywords: Linux,运维,devops
 url: http://wyman.wang
 
 # Set rss to false to disable feed link.
@@ -278,7 +278,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: night bright
+highlight_theme: night
 
 
 # ---------------------------------------------------------------

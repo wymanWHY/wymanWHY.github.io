@@ -33,7 +33,12 @@ nagios本身并不需要其他的依赖包，只是在为了直观地显示监�
 
 # 一、安装并配置需要的环境 #
 
-操作系统：CentOS7
+操作系统：`CentOS 7`
+
+所用到的nagios套件安装包：
+<a id="download" href="https://pan.baidu.com/s/1qaxc1He32dc_ciD1JW1uCw/"><i class="fa fa-download"></i><span> 下载地址</span>
+</a>
+（包含nagios-4.3.4、nagios-plugin、nrpe-3.2.1）
 
 ## 1、安装依赖工具 ##
 
