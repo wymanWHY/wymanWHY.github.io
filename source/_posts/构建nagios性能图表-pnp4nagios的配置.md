@@ -132,7 +132,7 @@ service_perfdata_file_processing_command=process-service-perfdata-file
 
 ![](http://p7wcdketk.bkt.clouddn.com/18-5-21/14445880.jpg)
 
-> <i class="fa fa-cloud-upload"></i>更多的描述请参考[官方文档](https://docs.pnp4nagios.org/pnp-0.6/modes#bulk_mode_with_npcd)
+> 更多的描述请参考<i class="fa fa-cloud-upload"></i>[官方文档](https://docs.pnp4nagios.org/pnp-0.6/modes#bulk_mode_with_npcd)
 
 ## 5、添加画图命令 ##
 
@@ -153,7 +153,7 @@ define command{
 }
 ```
 
-> <i class="fa fa-cloud-upload"></i>参见[官方文档](https://docs.pnp4nagios.org/pnp-0.6/config#bulk_mode_with_npcd)
+> 参见<i class="fa fa-cloud-upload"></i>[官方文档](https://docs.pnp4nagios.org/pnp-0.6/config#bulk_mode_with_npcd)
 
 ## 6、将图形关联至需要监控的服务中 ##
 

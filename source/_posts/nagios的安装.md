@@ -273,10 +273,23 @@ nagios插件与上述一样，使用编译安装完成：
 
 ### 首先，在客户端启动nrpe进程： ###
 
+启动之前，需要修改客户端的两处配置：
 
-**注意：记得先在客户端的`nrpe.cfg`配置文件中将服务端的ip地址写入`allowed_hosts`字段中：**
+**1：先在客户端的`nrpe.cfg`配置文件中将服务端的ip地址写入`allowed_hosts`字段中：**
 
 ![](http://p7wcdketk.bkt.clouddn.com/18-5-18/54620624.jpg)
+
+**2：修改/etc/xinet.d/nrpe文件：**
+
+```bash
+service nrpe {
+	disable		=	no
+	...
+	...
+	only_from	=	10.51.17.78  #nagios服务端的IP地址，如上面一致
+} 
+```
+
 
 启动`nrpe`：
 ```bash

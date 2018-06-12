@@ -1,7 +1,7 @@
 ---
 title: LDAP的一些操作精髓
 date: 2017-04-6 20:06:09
-categories: LinuxOPS
+categories: Linux OPS
 tags:
    - LDAP
 ---

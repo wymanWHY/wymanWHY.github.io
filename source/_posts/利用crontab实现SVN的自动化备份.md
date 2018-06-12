@@ -2,7 +2,6 @@
 title: 利用crontab实现SVN的自动化备份
 date: 2014-11-25 11:43:31
 categories: 
-	- Linux OPS
 	- shell
 tags:
 	- svn 备份

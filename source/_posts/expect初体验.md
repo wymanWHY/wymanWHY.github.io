@@ -2,7 +2,6 @@
 title: expect初体验
 date: 2018-04-11 09:07:48
 categories: 
-   - Linux OPS
    - shell
 tags:
    - expect
